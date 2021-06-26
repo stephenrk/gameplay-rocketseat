@@ -10,13 +10,16 @@ export const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: theme.colors.overlay
     },
+    barWrapper: {
+        height: 24,
+        width: '100%',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
     bar: {
         width: 39,
         height: 2,
         borderRadius: 2,
         backgroundColor: theme.colors.secondary30,
-        alignSelf: 'center',
-        marginTop: 13,
-        marginBottom: 103
     }
 })

@@ -64,19 +64,20 @@ export const Home = () => {
             </View>
             <View> 
                 <CategorySelect categorySelected={category} handleCategorySelect={handleCategorySelect} />
-                <View style={styles.content}>
-                    <ListHeader title="Partidas agendadas" subtitle="Total 6" />
-                    <FlatList
-                        data={appointments}
-                        keyExtractor={item => item.id}
-                        renderItem={({ item }) => (
-                            <Appointment data={item} onPress={handleAppointmentDetails} />
-                        )}
-                        style={styles.matches}
-                        showsVerticalScrollIndicator={false}
-                        ItemSeparatorComponent={() => <ListDivider />}
-                    />
-                </View>
+
+                <ListHeader title="Partidas agendadas" subtitle="Total 6" />
+
+                <FlatList
+                    data={appointments}
+                    keyExtractor={item => item.id}
+                    renderItem={({ item }) => (
+                        <Appointment data={item} onPress={handleAppointmentDetails} />
+                    )}
+                    contentContainerStyle={{ paddingBottom: 68 }}
+                    style={styles.matches}
+                    showsVerticalScrollIndicator={false}
+                    ItemSeparatorComponent={() => <ListDivider />}
+                />
             </View>
         </Background>
     )

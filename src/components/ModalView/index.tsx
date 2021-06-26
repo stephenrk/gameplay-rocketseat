@@ -17,7 +17,9 @@ export const ModalView = ({ children, ...rest }: Props) => {
             <View style={styles.overlay}>
                 <View style={styles.container}>
                     <Background>
-                        <View style={styles.bar} />
+                        <View style={styles.barWrapper}>
+                            <View style={styles.bar} />
+                        </View>
                         {children}
                     </Background>
                 </View>

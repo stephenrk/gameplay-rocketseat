@@ -11,8 +11,7 @@ export const styles = StyleSheet.create({
     bannerContent: {
         flex: 1,
         justifyContent: 'flex-end',
-        paddingHorizontal: 24,
-        marginBottom: 24
+        paddingHorizontal: 24
     },
     title: {
         fontSize: 28,
