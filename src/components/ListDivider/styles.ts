@@ -7,8 +7,7 @@ export const styles = StyleSheet.create({
         width: '75%',
         height: 1,
         backgroundColor: theme.colors.secondary40,
-        marginTop: 2,
-        marginVertical: 31,
+        marginVertical: 12,
         alignSelf: 'flex-end'
     }
 })

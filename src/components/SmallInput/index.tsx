@@ -1,12 +1,8 @@
 import React from 'react'
-import { TextInput, TextInputProps, View } from 'react-native'
+import { TextInput, TextInputProps } from 'react-native'
 import { styles } from './styles'
 
-type Props = TextInputProps & {
-
-}
-
-export const SmallInput = ({ ...rest }: Props) => {
+export const SmallInput = ({ ...rest }: TextInputProps) => {
     return (
         <TextInput keyboardType="numeric" style={styles.container} {...rest} />
     )
