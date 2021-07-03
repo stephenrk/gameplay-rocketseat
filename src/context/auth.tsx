@@ -1,9 +1,10 @@
 import React, { createContext, ReactNode, useContext, useState } from 'react'
 
 import * as AuthSession from 'expo-auth-session'
-import * as WebBrowser from 'expo-web-browser';
-import { SCOPE, CDN_IMAGE, CLIENT_ID, RESPONSE_TYPE } from '../config'
+import * as WebBrowser from 'expo-web-browser'
 import { api } from '../services/api'
+
+const { SCOPE, CDN_IMAGE, CLIENT_ID, RESPONSE_TYPE } = process.env
 
 type User = {
     id: string
